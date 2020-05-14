@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
-PROFILE_HOME=$HOME/.profiles
+PROFILE_HOME="${HOME}/.profiles/$(uname)"
 if [ -d ${PROFILE_HOME} ]; then
     for file in $(ls ${PROFILE_HOME}); do
-	if [ "${file}" != ".profile " ]; then
+	if [ "${file}" != ".*" ]; then
 	    file="$PROFILE_HOME/$file"
-	    if [ -f "$file" ]; then
-		source $file
-	    fi
+	    [ -f "${file}" ] && . $file
 	fi
     done
 fi
