@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+MAVEN_HOME=~/Develop/apache-maven-3.6.3
+
+if [ -d $MAVEN_HOME ]; then
+   export PATH=$MAVEN_HOME/bin:$PATH
+fi	  
