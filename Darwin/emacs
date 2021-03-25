@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
 alias e="emacs -nw"
+alias ec="emacsclient -nw"
