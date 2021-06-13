@@ -2,3 +2,5 @@
 
 alias e="emacs -nw"
 alias ec="emacsclient -nw"
+alias ecc="emacsclient -c"
+
